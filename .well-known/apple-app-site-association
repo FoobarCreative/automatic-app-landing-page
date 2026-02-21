@@ -1,0 +1,18 @@
+{
+    "applinks": {
+        "details": [
+             {
+               "appIDs": ["TODO_TEAM_ID.TODO_BUNDLE_ID"],
+               "components": [
+                    {
+                        "/": "/app/*"
+                    },
+                    {
+                        "/": "/privacy-policy",
+                        "exclude": true
+                    }
+                ]
+            }
+        ]
+    }
+}
