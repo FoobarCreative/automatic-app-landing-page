@@ -108,7 +108,7 @@ layout: page
 title: Page Title
 include_in_header: true   # Show in top navigation
 include_in_footer: false  # Show in footer links
-permalink: /page-url/
+permalink: /page-url
 ---
 ```
 
