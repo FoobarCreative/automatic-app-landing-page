@@ -1,7 +1,7 @@
 #page title
 page_title                                :                                           # Automatically populates with app name if not set and if iOS app ID is set. Otherwise enter manually.
 
-# Site URL — required for sitemap (jekyll-sitemap) and absolute OG/Twitter image URLs
+# Site URL, required for sitemap (jekyll-sitemap) and absolute OG/Twitter image URLs
 url                                       :                                           # TODO: Set your site URL, e.g. https://www.yourapp.com
 
 # App Info

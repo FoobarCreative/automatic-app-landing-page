@@ -84,7 +84,7 @@ The site is entirely configured through `_config.yml` with minimal need to touch
 
 **Jekyll Collections**: The `_pages` collection allows markdown files to be rendered with custom permalinks and included in navigation via `include_in_header: true` / `include_in_footer: true`.
 
-**Automatic App Store Integration**: The `ios_app_id` in `_config.yml` triggers automatic fetching of app metadata from the App Store API. The fetch script (`appstoreimages.html`, jQuery-based) is only included when one of the auto-populated fields (`appstore_link`, `app_icon`, `app_name`, `app_price`, `page_title`) is left blank — set them all explicitly in `_config.yml` and the site ships zero JavaScript.
+**Automatic App Store Integration**: The `ios_app_id` in `_config.yml` triggers automatic fetching of app metadata from the App Store API. The fetch script (`appstoreimages.html`, jQuery-based) is only included when one of the auto-populated fields (`appstore_link`, `app_icon`, `app_name`, `app_price`, `page_title`) is left blank. Set them all explicitly in `_config.yml` and the site ships zero JavaScript.
 
 **Screenshot Gallery**: Setting `gallery_images` in `_config.yml` renders a lazy-loaded CSS scroll-snap gallery (no JS) between the hero and the feature list. Omit it and the section disappears.
 

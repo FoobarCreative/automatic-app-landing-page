@@ -2,7 +2,7 @@
 published: false                # Delete this line to publish the guide.
 title: "How to Do Something on iPhone (Long-Tail Keyword Title)"
 short_title: "Do Something"     # Used in breadcrumbs and related-guide cards.
-description: "One or two sentences answering the search intent — shown under the title and on the guides index."
+description: "One or two sentences answering the search intent, shown under the title and on the guides index."
 settings_url: "photos-redirect://"   # Optional deep link button (e.g. photos-redirect://, App-prefs:root=CASTLE). Omit to hide.
 cta_label: "Open Photos →"
 date: 2026-01-01
