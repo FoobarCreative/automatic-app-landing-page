@@ -65,7 +65,7 @@ The site is entirely configured through `_config.yml` with minimal need to touch
   - `changelog.md` - App changelog (hidden from nav/footer by default)
   - `privacy-policy.md` - Privacy policy (shown in footer)
   - `contact.md` - Contact form page
-  - `guides.html` - Guides index at `/guides` (linked from nav/footer only when `enable_guides: true`)
+  - `guides.html` - Guides index at `/guides` (excluded from the build by default; remove it from `exclude:` in `_config.yml` and set `enable_guides: true` to publish and link it)
 - `_guides/` - SEO guide articles (collection, published at `/guides/<filename>` with the `guide` layout; see `example-guide.md`)
 - `_sass/` - Styling
   - `base.scss` - Base styles and variables
@@ -88,7 +88,7 @@ The site is entirely configured through `_config.yml` with minimal need to touch
 
 **Screenshot Gallery**: Setting `gallery_images` in `_config.yml` renders a lazy-loaded CSS scroll-snap gallery (no JS) between the hero and the feature list. Omit it and the section disappears.
 
-**Guides System**: Markdown files in `_guides/` are published at `/guides/<filename>` using the `guide` layout (breadcrumbs, optional Settings deep-link button, related-guide cards, app download CTA). A `/guides` index page always exists; `enable_guides: true` links it from the header and footer. See `_guides/example-guide.md` for the frontmatter reference.
+**Guides System**: Markdown files in `_guides/` are published at `/guides/<filename>` using the `guide` layout (breadcrumbs, optional Settings deep-link button, related-guide cards, app download CTA). The `/guides` index page is listed in `exclude:` so a site with no guides does not ship an empty, indexable `/guides` URL. To turn guides on: remove `_pages/guides.html` from `exclude:` and set `enable_guides: true` to link it from the header and footer. See `_guides/example-guide.md` for the frontmatter reference.
 
 **Device Mockup System**: SVG clip paths are used to display screenshots/videos within iPhone device frames. Device color is configurable via `device_color` setting.
 
