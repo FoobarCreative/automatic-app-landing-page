@@ -17,7 +17,7 @@ app_icon                                  : # assets/appicon.png                
 app_name                                  :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 :                                           # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_description                           : Write a short tagline for your app.
-app_headline                              :                                           # Optional. A keyword phrase shown under the app name inside the H1 (e.g. "Duplicate photo cleaner for iPhone"). Improves SEO.
+app_subtitle                              :                                           # Optional. A keyword phrase shown under the app name inside the H1 (e.g. "Duplicate photo cleaner for iPhone"). Also used in the guide CTA. Improves SEO.
 app_category                              : UtilitiesApplication                      # Schema.org applicationCategory for structured data (e.g. UtilitiesApplication, MultimediaApplication, DesignApplication, LifestyleApplication, BrowserApplication).
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
