@@ -12,6 +12,12 @@ redirect_from:
   - /guides/example-guide/
 related:                        # Optional list of other guides' item_ids, shown as cards at the end.
   - another_guide_item_id
+image: /assets/guides/example-guide/step-1.webp   # Optional. Used for Article schema and social cards. Falls back to site.og_image.
+faq:                            # Optional. Rendered as an FAQ section and as FAQPage schema. Use real search queries.
+  - q: "Does this work on iPad?"
+    a: "Yes. The steps are the same on iPhone and iPad."
+  - q: "Do I need the app for this?"
+    a: "No. The steps use built-in iOS settings. The app makes the task faster."
 ---
 
 Open with a sentence that meets the searcher where they are, then explain the fix.
