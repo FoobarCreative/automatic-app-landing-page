@@ -21,7 +21,7 @@
 			"description": {{ page.description | jsonify }},
 			"url": "{{ page.url | absolute_url }}",
 			"mainEntityOfPage": "{{ page.url | absolute_url }}",{% if page.date %}
-			"datePublished": "{{ page.date | date_to_xmlschema }}",
+			"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}{% if guide_modified %}
 			"dateModified": "{{ guide_modified | date_to_xmlschema }}",{% endif %}{% if guide_image %}
 			"image": "{{ guide_image | absolute_url }}",{% endif %}
 			"author": { "@id": "{{ '/' | absolute_url }}#organization" },
