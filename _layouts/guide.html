@@ -8,6 +8,8 @@
 {% include head.html %}
 
 {% assign guide_image = page.image | default: site.og_image %}
+{% assign guide_published = page.date %}
+{% if page.last_updated %}{% assign lu_ts = page.last_updated | date: '%s' | plus: 0 %}{% assign pd_ts = page.date | date: '%s' | plus: 0 %}{% if lu_ts < pd_ts %}{% assign guide_published = page.last_updated %}{% endif %}{% endif %}
 {% assign guide_modified = page.last_updated | default: page.date %}
 <!-- Guide structured data: Article + BreadcrumbList (+ FAQPage when the guide has a faq list) -->
 <script type="application/ld+json">
@@ -21,7 +23,7 @@
 			"description": {{ page.description | jsonify }},
 			"url": "{{ page.url | absolute_url }}",
 			"mainEntityOfPage": "{{ page.url | absolute_url }}",{% if page.date %}
-			"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}{% if guide_modified %}
+			"datePublished": "{{ guide_published | date_to_xmlschema }}",{% endif %}{% if guide_modified %}
 			"dateModified": "{{ guide_modified | date_to_xmlschema }}",{% endif %}{% if guide_image %}
 			"image": "{{ guide_image | absolute_url }}",{% endif %}
 			"author": { "@id": "{{ '/' | absolute_url }}#organization" },
